@@ -13,7 +13,7 @@ module Ym4r
         raise GMapsAPIKeyConfigFileNotFoundException.new("File config/gmaps_api_key.yml not found")
       else
         env = ENV['RAILS_ENV'] || Rails.env
-        GMAPS_API_KEY = YAML.load_file(Rails.root.join("config","gmaps_api_key.yml"))[env]
+        GMAPS_API_KEY = YAML.load_file((Rails.root || Pathname.new('')).join("config","gmaps_api_key.yml"))[env]
       end
       
       def self.get(options = {})
