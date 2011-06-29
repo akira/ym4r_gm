@@ -19,7 +19,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %Q{Fork of YM4R_GM for Rails 3 and Ruby 1.9.2}
   gem.description = %Q{Fork of YM4R_GM for Rails 3 and Ruby 1.9.2}
   gem.email = "grzegorz.blaszczyk@gmail.com"
-  gem.authors = ["Grzegorz Błaszczyk"]
+  gem.authors = ["Grzegorz Blaszczyk"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
